@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry Card</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background: linear-gradient(135deg, #fde8e8, #f0f0f0);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+        .glow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 105, 97, 0.6) 0%, rgba(255, 255, 255, 0) 70%);
+            animation: glowAnimation 3s ease-in-out infinite;
+            z-index: -1;
+        }
+        @keyframes glowAnimation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .card {
+            width: 90%;
+            max-width: 800px; /* Set maximum width */
+            margin: 10% auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 8% 6%;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            color: #ff6961;
+            font-size: 5vw;
+            margin-bottom: 5%;
+            font-family: 'Pacifico', cursive;
+        }
+        p {
+            color: #666;
+            font-size: 3vw;
+            line-height: 1.6;
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 10%;
+        }
+        .heart {
+            color: #ff6961;
+            font-size: 7vw;
+            margin-bottom: 10%;
+        }
+        .flower {
+            position: absolute;
+            top: -5%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30%;
+            max-width: 200px;
+            opacity: 0.2;
+            z-index: -1;
+        }
+        .heart-shape {
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            font-size: 12vw;
+            color: #ff6961;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 600px) {
+            .card {
+                padding: 15% 10%;
+            }
+            h1 {
+                font-size: 8vw;
+            }
+            p {
+                font-size: 5vw;
+            }
+            .heart {
+                font-size: 12vw;
+            }
+            .flower {
+                width: 50%;
+            }
+            .heart-shape {
+                font-size: 20vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glow"></div>
+    <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2017/09/01/17/50/background-2706818_960_720.jpg" alt="Floral Design" class="flower">
+        <span class="heart">&hearts;</span>
+        <h1>Sorry</h1>
+        <p>Dear Mom,<br> I deeply apologize for the hurt I've caused you. You mean everything to me. I hope these words find a place in your heart, where my absence has created a void. I am deeply sorry for the pain and hurt my silence has caused you. In the silence, I've come to realize the magnitude of your presence in my life, and the void it leaves when you're not near. You are the cornerstone of my world, the guiding light that leads me through darkness, and the unwavering source of love that sustains me. I am eternally grateful for your love, your patience, and your unwavering support. Please forgive my silence, for you are the most precious person in my life, and I can't bear to see you hurt. Let's mend what's broken and rebuild our bond stronger than ever before. I love you more than words can express.</p>
+        <span class="heart-shape">&hearts;</span>
+    </div>
+</body>
+</html>
